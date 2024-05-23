@@ -74,7 +74,7 @@
 # :hatched_chick:구현한 기능들
   * 메인화면
 
-     ![메인화면](./bookshop01/main.png)
+     ![메인화면](/main.png)
 
 ***
    
