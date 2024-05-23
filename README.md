@@ -81,85 +81,85 @@
   * 회원관련 
     <details>
        <summary>로그인</summary>
-       <img src="./booktopia/login.png">
+       <img src="/bookShop01/booktopia/login.png">
     </details>
     
     <details>
        <summary>회원가입</summary>
-       <img src="./booktopia/signUp.png">
+       <img src="/bookShop01/booktopia/signUp.png">
     </details>
     
     <details>
        <summary>회원 정보 수정 및 탈퇴</summary>
-       <img src="./booktopia/modifyMember.png">
+       <img src="/bookShop01/booktopia/modifyMember.png">
     </details>
     
     <details>
        <summary>아이디 / 비밀번호 찾기</summary>
-       <img src="./booktopia/emailVeri.png">
+       <img src="/bookShop01/booktopia/emailVeri.png">
     </details>
              
   * 게시판
      <details>
         <summary>공지사항 게시판</summary>
-        <img src="./booktopia/newsBoard.png">
+        <img src="/bookShop01/booktopia/newsBoard.png">
      </details>
      
      <details>
         <summary>상품 리뷰 게시판</summary>
-        <img src="./booktopia/reviewBoard.png">
+        <img src="/bookShop01/booktopia/reviewBoard.png">
      </details>
         
   * API
     <details>
        <summary>카카오 로그인 API</summary>
-       <img src="./booktopia/kakaoLogin.png">
+       <img src="/bookShop01/booktopia/kakaoLogin.png">
     </details>  
     
     <details>
        <summary>아임포트 카카오 결제 API</summary>
-       <img src="./booktopia/kakaoPay.png">
+       <img src="/bookShop01/booktopia/kakaoPay.png">
     </details> 
    
   * 크롤링
     <details>
        <summary>교보문고 / Naver</summary>
-       <img src="./booktopia/crawling.png">
+       <img src="/bookShop01/booktopia/crawling.png">
     </details>
      
    * <details>
         <summary>검색 기능</summary>
-        <img src="./booktopia/search.png">
+        <img src="/bookShop01/booktopia/search.png">
      </details>
   
   * <details>
        <summary>주문 배송</summary>
-       <img src="./booktopia/order.png">
+       <img src="/bookShop01/booktopia/order.png">
     </details>
   
   * <details>
        <summary>관리자</summary>
-       <img src="./booktopia/adminPage.png">
+       <img src="/bookShop01/booktopia/adminPage.png">
     </details>
   
   * <details>
        <summary>마이페이지</summary>
-       <img src="./booktopia/myPage.png">
+       <img src="/bookShop01/booktopia/myPage.png">
     </details>   
 
 ***
 
 # :shaved_ice:DB 구성
 
-   ![erd](./booktopia/BookShopERD.png)
+   ![erd](/bookShop01/booktopia/BookShopERD.png)
 
 ***   
 
 ## :carousel_horse:마무리 소감
 <details>
   <summary> :pencil2:Wrap Up</summary>
-  <img src="./booktopia/mingmingg.png">
-  <img src="./booktopia/jjongaa.png">
-  <img src="./booktopia/jjiminn.png">
+  <img src="/bookShop01/booktopia/mingmingg.png">
+  <img src="/bookShop01/booktopia/jjongaa.png">
+  <img src="/bookShop01/booktopia/jjiminn.png">
   
 </details>        
