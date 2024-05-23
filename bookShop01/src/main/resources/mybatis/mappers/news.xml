@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+    
+<mapper namespace="mapper.news">
+
+
+	<!-- 사이드용 전체 목록 -->
+	<select id="selectSideList" resultType="newsVO" parameterType="java.util.HashMap">
+    	select * from t_shopping_news order by news_idx desc
+    </select>
+    
+    <!-- 전체 목록 -->
+    <select id="selectContent" resultType="newsVO" parameterType="java.util.HashMap">
+    	select
+		    news_idx,
+		    news_title,
+		    news_content,
+		    news_date,
+		    news_cnt,
+		    news_member_id
+		from
+			(select
+			    rownum rn,
+			    news_idx,
+			    news_title,
+			    news_content,
+			    to_char(news_date, 'YYYY-MM-DD HH24:mi:ss') news_date,
+			    news_cnt,
+			    news_member_id
+			from
+			    t_shopping_news
+			order by news_idx desc) total
+		where
+		    rn &gt; #{start} and rn &lt;= #{end}
+    </select>
+    
+    <!-- 전체 건수 -->
+    <select id="selectContentCnt" resultType="int" parameterType="java.util.HashMap">
+    	select
+    		count(news_idx)
+    	from
+    		t_shopping_news
+    </select>
+    
+    <!-- 게시글 상세화면 -->
+    <select id="selectContentView" resultType="newsVO" parameterType="java.util.HashMap">
+    	select
+    		news_idx,
+			news_title,
+			news_content,
+			news_member_id,
+			to_char(news_date, 'YYYY-MM-DD HH24:mi:ss') news_date
+    	from
+    		t_shopping_news
+    	where
+    		news_idx = #{news_idx}
+    </select>
+    
+    <!-- 조회수 증가 -->
+    <update id="incrementCnt">
+        update t_shopping_news set news_cnt = news_cnt + 1 where news_idx = #{news_idx}
+    </update>
+    
+    <!-- 새글 등록 -->
+    <insert id="insertContent" parameterType="java.util.HashMap">
+        insert into t_shopping_news(
+        	news_idx,
+			news_title,
+			news_content,
+			news_date,
+			news_cnt,
+			news_sfile,
+			news_member_id
+		) values(
+			seq_news_idx.nextval,
+			#{news_title},
+			#{news_content},
+			SYSDATE,
+			0,
+			#{news_sfile},
+			#{news_member_id}
+		)
+    </insert>
+    
+    <!-- 새글 등록 후 새글번호 반환 -->
+    <select id="getNewNewsIdx" resultType="java.lang.Integer">
+	    select news_idx
+	    from t_shopping_news
+	    where rownum = 1
+	    order by news_idx desc
+	</select>
+    
+    <!-- 글 수정 -->
+    <update id="updateContent" parameterType="java.util.HashMap">
+    	update
+    		t_shopping_news
+    	set
+    		news_title = #{news_title},
+			news_content = #{news_content},
+			news_sfile = #{news_sfile}
+		where
+			news_idx = #{news_idx}
+    </update>
+    
+    <!-- 게시글 삭제 -->
+    <delete id="deleteNews" parameterType="java.util.HashMap">
+        delete
+        from
+        	t_shopping_news
+        where
+        	news_idx = #{news_idx}
+    </delete>
+  
+    
+</mapper>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
+	<aop:aspectj-autoproxy />
+	<bean id="propertyPlaceholderConfigurer"
+	class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<property name="locations">
+	<value>/WEB-INF/config/jdbc/jdbc.properties</value>
+	</property>
+	</bean>
+	
+	<bean id="dataSource"
+		class="org.apache.ibatis.datasource.pooled.PooledDataSource">
+		<property name="driver" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	<bean id ="sqlSessionFactory" class= "org.mybatis.spring.SqlSessionFactoryBean" >
+	    <property name="dataSource" ref="dataSource" />
+	  <property name="configLocation" value="classpath:mybatis/models/modelConfig.xml"  />
+	  <property name="mapperLocations" value="classpath:mybatis/mappers/*.xml" />
+	</bean >
+	
+	<bean id ="transactionManager"
+	    class= "org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+	    <property name ="dataSource" ref= "dataSource"></property >
+	</bean >
+	
+	<bean id ="sqlSession"
+	    class= "org.mybatis.spring.SqlSessionTemplate" >
+	    <constructor-arg ref= "sqlSessionFactory"></constructor-arg >
+	</bean >
+	
+		<!-- 이메일 인증 관련 등록 -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.naver.com"/>
+	    <property name="port" value="465"/>
+	    <property name="username" value="네이버 메일 주소"/>
+	    <property name="password" value="네이버 비밀번호"/>
+	    <property name="defaultEncoding" value="utf-8" /><!-- 이메일 기본 인코딩 설정 -->
+	    <!-- 보안연결 SSL과 관련된 설정 -->
+	    <property name="javaMailProperties">
+		    <props>
+		      <prop key="mail.smtp.ssl.protocols">TLSv1.2</prop> <!--  SSL 프로토콜의 버전을 설정 (필수) -->
+		      <prop key="mail.smtp.auth">true</prop><!-- SMTP 서버에 인증을 사용할지 여부 -->
+		      <prop key="mail.smtp.starttls.enable">true</prop><!-- STARTTLS 암호화를 사용할지 여부를 설정 -->
+		      <prop key="mail.smtps.checkserveridentity">true</prop><!-- 서버 신원 확인을 활성화할지 여부를 설정 -->
+		      <prop key="mail.smtps.ssl.trust">smtp.naver.com</prop><!--  SSL 인증서를 신뢰할 호스트를 지정 -->
+		      <prop key="mail.debug">true</prop><!-- 디버그 모드를 활성화할지 여부 -->
+		      <prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop><!-- 소켓 팩토리 클래스를 설정 -->
+		     </props>
+	     </property>
+	</bean>
+
+</beans>
