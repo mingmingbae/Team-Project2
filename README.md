@@ -74,29 +74,30 @@
 # :hatched_chick:구현한 기능들
   * 메인화면
 
-     ![메인화면](bookShop01/main.png)
+     ![메인화면](./bookShop01/main.png)
 
 ***
    
   * 회원관련 
     <details>
        <summary>로그인</summary>
-       <img src="bookshop01/login.png">
+       <img src="./bookShop01/login.png">
     </details>
     
     <details>
        <summary>회원가입</summary>
-       <img src="bookshop01/signUp.png">
+       <img src="./bookShop01/signUp.png">
     </details>
     
     <details>
        <summary>회원 정보 수정 및 탈퇴</summary>
-       <img src="bookshop01/modifyMember.png">
+       <img src="./bookShop01/modifyMember.png">
     </details>
     
     <details>
        <summary>아이디 / 비밀번호 찾기</summary>
-       <img src="bookshop01/emailVeri.png">
+       <img src="./bookShop01/emailVeri.png">
     </details>
              
-  * 게시
+  * 게시판
+     <details>
