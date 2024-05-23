@@ -1,11 +1,11 @@
-<img src="https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=BookTopia&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=BookShop01&fontSize=90" />
 
 ***
 
 # :sparkles:개요
   * 프로젝트명
     
-    BookTopia 도서쇼핑몰
+    BookShop01 도서쇼핑몰
     
   * 기간
 
@@ -74,91 +74,29 @@
 # :hatched_chick:구현한 기능들
   * 메인화면
 
-     ![메인화면](./booktopia/main.png)
+     ![메인화면](./bookshop01/main.png)
 
 ***
    
   * 회원관련 
     <details>
        <summary>로그인</summary>
-       <img src="./booktopia/login.png">
+       <img src="./bookshop01/login.png">
     </details>
     
     <details>
        <summary>회원가입</summary>
-       <img src="./booktopia/signUp.png">
+       <img src="./bookshop01/signUp.png">
     </details>
     
     <details>
        <summary>회원 정보 수정 및 탈퇴</summary>
-       <img src="./booktopia/modifyMember.png">
+       <img src="./bookshop01/modifyMember.png">
     </details>
     
     <details>
        <summary>아이디 / 비밀번호 찾기</summary>
-       <img src="./booktopia/emailVeri.png">
+       <img src="./bookshop01/emailVeri.png">
     </details>
              
-  * 게시판
-     <details>
-        <summary>공지사항 게시판</summary>
-        <img src="./booktopia/newsBoard.png">
-     </details>
-     
-     <details>
-        <summary>상품 리뷰 게시판</summary>
-        <img src="./booktopia/reviewBoard.png">
-     </details>
-        
-  * API
-    <details>
-       <summary>카카오 로그인 API</summary>
-       <img src="./booktopia/kakaoLogin.png">
-    </details>  
-    
-    <details>
-       <summary>아임포트 카카오 결제 API</summary>
-       <img src="./booktopia/kakaoPay.png">
-    </details> 
-   
-  * 크롤링
-    <details>
-       <summary>교보문고 / Naver</summary>
-       <img src="./booktopia/crawling.png">
-    </details>
-     
-   * <details>
-        <summary>검색 기능</summary>
-        <img src="./booktopia/search.png">
-     </details>
-  
-  * <details>
-       <summary>주문 배송</summary>
-       <img src="./booktopia/order.png">
-    </details>
-  
-  * <details>
-       <summary>관리자</summary>
-       <img src="./booktopia/adminPage.png">
-    </details>
-  
-  * <details>
-       <summary>마이페이지</summary>
-       <img src="./booktopia/myPage.png">
-    </details>   
-
-***
-
-# :shaved_ice:DB 구성
-
-   ![erd](./booktopia/BookShopERD.png)
-
-***   
-
-## :carousel_horse:마무리 소감
-<details>
-  <summary> :pencil2:Wrap Up</summary>
-  <img src="./booktopia/mingming.png">
-  <img src="./booktopia/jjonga.png">
-  <img src="./booktopia/jjimin.png">
-</details>        
+  * 게시
