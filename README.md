@@ -80,7 +80,7 @@
    
   * 회원관련 
     <details>
-       <summary>로그인 <img src="/bookShop01/booktopia/login.png"></summary>
+       <summary>로그인 <img src="/bookShop01/booktopia/cursor.png"></summary>
        <img src="/bookShop01/booktopia/login.png">
     </details>
     
