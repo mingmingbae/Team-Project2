@@ -85,65 +85,65 @@
     </details>
     
     <details>
-       <summary>회원가입 (클릭!!)</summary>
+       <summary>회원가입 (click!)</summary>
        <img src="/bookShop01/booktopia/signUp.png">
     </details>
     
     <details>
-       <summary>회원 정보 수정 및 탈퇴 (클릭!!)</summary>
+       <summary>회원 정보 수정 및 탈퇴 (click!)</summary>
        <img src="/bookShop01/booktopia/modifyMember.png">
     </details>
     
     <details>
-       <summary>아이디 / 비밀번호 찾기 (클릭!!)</summary>
+       <summary>아이디 / 비밀번호 찾기 (click!)</summary>
        <img src="/bookShop01/booktopia/emailVeri.png">
     </details>
              
   * 게시판
      <details>
-        <summary>공지사항 게시판 (클릭!!)</summary>
+        <summary>공지사항 게시판 (click!)</summary>
         <img src="/bookShop01/booktopia/newsBoard.png">
      </details>
      
      <details>
-        <summary>상품 리뷰 게시판 (클릭!!)</summary>
+        <summary>상품 리뷰 게시판 (click!)</summary>
         <img src="/bookShop01/booktopia/reviewBoard.png">
      </details>
         
   * API
     <details>
-       <summary>카카오 로그인 API (클릭!!)</summary>
+       <summary>카카오 로그인 API (click!)</summary>
        <img src="/bookShop01/booktopia/kakaoLogin.png">
     </details>  
     
     <details>
-       <summary>아임포트 카카오 결제 API (클릭!!)</summary>
+       <summary>아임포트 카카오 결제 API (click!)</summary>
        <img src="/bookShop01/booktopia/kakaoPay.png">
     </details> 
    
   * 크롤링
     <details>
-       <summary>교보문고 / Naver (클릭!!)</summary>
+       <summary>교보문고 / Naver (click!)</summary>
        <img src="/bookShop01/booktopia/crawling.png">
     </details>
      
    * <details>
-        <summary>검색 기능 (클릭!!)</summary>
+        <summary>검색 기능 (click!)</summary>
         <img src="/bookShop01/booktopia/search.png">
      </details>
   
   * <details>
-       <summary>주문 배송 (클릭!!)</summary>
+       <summary>주문 배송 (click!)</summary>
        <img src="/bookShop01/booktopia/order.png">
     </details>
   
   * <details>
-       <summary>관리자 (클릭!!)</summary>
+       <summary>관리자 (click!)</summary>
        <img src="/bookShop01/booktopia/adminPage.png">
     </details>
   
   * <details>
-       <summary>마이페이지 (클릭!!)</summary>
+       <summary>마이페이지 (click!)</summary>
        <img src="/bookShop01/booktopia/myPage.png">
     </details>   
 
@@ -155,7 +155,7 @@
 
 ***   
 
-## :carousel_horse:마무리 소감 (클릭!!)
+## :carousel_horse:마무리 소감 (click!)
 <details>
   <summary> :pencil2:Wrap Up</summary>
   <img src="/bookShop01/booktopia/mingmingg.png">
